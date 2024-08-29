@@ -1,5 +1,6 @@
 # About project
 
+The Volunteer App is a platform designed to facilitate volunteer management and event registration. Users can register their email, log in, and view or add volunteering events.It was used to develop functional testing scenarios.
 
 # Getting Started with Create React App
 
