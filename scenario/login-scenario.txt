@@ -122,4 +122,11 @@ Expexted result
 - You should see error.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
+14. Add an email address without .com  — Fail.
+- Open the volunteer app.
+- Enter the email address "1a@a`.com" and press "Login."
 
+Expexted result 
+- You should see error.
+- Unable to log in to the system.
+------------------------------------------------------------------------------------------------
