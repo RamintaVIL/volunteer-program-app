@@ -36,17 +36,16 @@ Expexted result
 - Every event should have a 'delete' button. 
 - The selected event is successfully deleted.
 ------------------------------------------------------------------------------------------------
-4. "Delete the event. — Passed."
+4. "Made list and refresh page. — Passed."
 Step
 - Open the volunteer app.
-- Register a new email address, "11111@11111.com".
-- Add events to the list.
+- Register a new email address, "laura@git.com".
+- Show the correct information about events, including those that are deleted and those that are active.
 
 Expexted result 
 - No errors.
 - Successful login.
-- Every event should have 'delete' button. 
-- Successfully delete event.
+- Correct information about events is displayed after refreshing the page.
 ------------------------------------------------------------------------------------------------
 5. "Add an unregistered email — Passed."
 - Open the volunteer app.
