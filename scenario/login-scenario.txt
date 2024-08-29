@@ -24,7 +24,31 @@ Expexted result
 - Access to the volunteer list.
 - Successfully add an event to 'Your Volunteering Events'.
 ------------------------------------------------------------------------------------------------
-3. "Add an unregistered email — Passed."
+3. "Delete the event. — Passed."
+Step
+- Open the volunteer app.
+- Register a new email address, "laura@git.com".
+- Select an event to delete.
+
+Expexted result 
+- No errors.
+- Successful login.
+- Every event should have a 'delete' button. 
+- The selected event is successfully deleted.
+------------------------------------------------------------------------------------------------
+4. "Delete the event. — Passed."
+Step
+- Open the volunteer app.
+- Register a new email address, "11111@11111.com".
+- Add events to the list.
+
+Expexted result 
+- No errors.
+- Successful login.
+- Every event should have 'delete' button. 
+- Successfully delete event.
+------------------------------------------------------------------------------------------------
+5. "Add an unregistered email — Passed."
 - Open the volunteer app.
 - Enter the email address "aaaaa@bbb.lt" and press "Login."
 
@@ -32,7 +56,7 @@ Expexted result
 - You should see a notification saying "Email not found" or another message about registration.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-4. "Adding an unregistered email a second time — Passed."
+6. "Adding an unregistered email a second time — Passed."
 - Open the volunteer app.
 - Enter the email address "aaaaa@bbb.lt" second time and press "Login."
 
@@ -40,7 +64,7 @@ Expexted result
 - You should see a notification saying "Email not found" or another message about registration.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-5. Add an email address with numbers that is not registered — Passed.
+7. Add an email address with numbers that is not registered — Passed.
 - Open the volunteer app.
 - Enter the email address "11111@2222.com" and press "Login."
 
@@ -48,7 +72,7 @@ Expexted result
 - You should see a notification saying "Email format is wrong, please check it" or another message about registration.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-6. Add an email address with numbers that is not registered — Passed.
+8. Add an email address with numbers that is not registered — Passed.
 - Open the volunteer app.
 - Enter the email address "1@2.com" and press "Login."
 
@@ -56,7 +80,7 @@ Expexted result
 - You should see a notification saying "Email format is wrong, please check it" or another message about registration.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-7. Add an email address with symbols that is not registered — Passed.
+9. Add an email address with symbols that is not registered — Passed.
 - Open the volunteer app.
 - Enter the email address "+@/.com" and press "Login."
 
@@ -64,7 +88,7 @@ Expexted result
 - You should see error.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-8. Add an email address with more than 1 symbols that is not registered — Passed.
+10. Add an email address with more than 1 symbols that is not registered — Passed.
 - Open the volunteer app.
 - Enter the email address "+,'-@/;;`.com" and press "Login."
 
@@ -72,7 +96,7 @@ Expexted result
 - You should see error.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-9. Add an email address with spaces that is not registered — Passed.
+11. Add an email address with spaces that is not registered — Passed.
 - Open the volunteer app.
 - Enter the email address "   @   .com" and press "Login."
 
@@ -80,7 +104,7 @@ Expexted result
 - You should see error.
 - Unable to log in to the system.
 ------------------------------------------------------------------------------------------------
-10. Add an email address with more than 1 symbols that is not registered — Passed.
+12. Add an email address with more than 1 symbols that is not registered — Passed.
 - Open the volunteer app.
 - Enter the email address "+,'-@/;;`.com" and press "Login."
 
