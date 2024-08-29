@@ -1,13 +1,20 @@
 import React from 'react';
 
-function EventList({ volunteers }) {
+function EventList({ events, addVolunteer, email, volunteers }) {
+    const registeredEventIds = volunteers
+        .filter(volunteer => volunteer.email === email)
+        .map(volunteer => volunteer.eventId);
+
+    const availableEvents = events.filter(event => !registeredEventIds.includes(event.id));
+
     return (
         <div>
-            <h2>Upcoming Events</h2>
+            <h2>Available Events</h2>
             <ul>
-                {volunteers.map((volunteer, index) => (
+                {availableEvents.map((event, index) => (
                     <li key={index}>
-                        {volunteer.name} ({volunteer.email}) has registered for {volunteer.event}
+                        {event.name} - {event.date} at {event.time}
+                        <button onClick={() => addVolunteer({ email, eventId: event.id })}>Register</button>
                     </li>
                 ))}
             </ul>

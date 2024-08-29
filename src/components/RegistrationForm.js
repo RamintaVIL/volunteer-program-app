@@ -1,31 +1,47 @@
 import React, { useState } from 'react';
 
-function RegistrationForm({ addVolunteer }) {
-    const [name, setName] = useState('');
+function RegistrationForm({ onRegister }) {
     const [email, setEmail] = useState('');
-    const [event, setEvent] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [birthDate, setBirthDate] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (name && email && event) {
-            addVolunteer({ name, email, event });
-            setName('');
-            setEmail('');
-            setEvent('');
+        if (email && firstName && lastName && birthDate) {
+            onRegister({ email, firstName, lastName, birthDate });
         } else {
-            alert('Please fill out all fields!');
+            alert('Please fill in all the fields!');
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Register as a Volunteer</h2>
+            <h2>Register</h2>
             <div>
-                <label>Name</label>
+                <label>First Name</label>
                 <input
                     type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    required
+                />
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input
+                    type="text"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    required
+                />
+            </div>
+            <div>
+                <label>Birth Date</label>
+                <input
+                    type="date"
+                    value={birthDate}
+                    onChange={(e) => setBirthDate(e.target.value)}
                     required
                 />
             </div>
@@ -37,19 +53,6 @@ function RegistrationForm({ addVolunteer }) {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
-            </div>
-            <div>
-                <label>Choose Event</label>
-                <select
-                    value={event}
-                    onChange={(e) => setEvent(e.target.value)}
-                    required
-                >
-                    <option value="">Select Event</option>
-                    <option value="Charity Run">Charity Run</option>
-                    <option value="Food Drive">Food Drive</option>
-                    <option value="Community Clean-up">Community Clean-up</option>
-                </select>
             </div>
             <button type="submit">Register</button>
         </form>
