@@ -1,6 +1,6 @@
 Login functionality:
-
-Add email, which are registred - Passed
+------------------------------------------------------------------------------------------------
+1. "Add a registered email — Passed."
 Step
 - Open the volunteer app.
 - First, register a new email address, "a@a.lt."
@@ -11,11 +11,25 @@ Expexted result
 - No errors.
 - Successful login.
 - Access to the volunteer list.
---------------------------------------------------------------------------------
-Add email, which are not registred - Passed
+------------------------------------------------------------------------------------------------
+2. "Add an unregistered email — Passed."
 - Open the volunteer app.
 - Enter the email address "aaaaa@bbb.lt" and press "Login."
 
 Expexted result 
 - You should see a notification saying "Email not found" or another message about registration.
+------------------------------------------------------------------------------------------------
+3. "Adding an unregistered email a second time — Passed."
+- Open the volunteer app.
+- Enter the email address "aaaaa@bbb.lt" second time and press "Login."
 
+Expexted result 
+- You should see a notification saying "Email not found" or another message about registration.
+------------------------------------------------------------------------------------------------
+4. Add an email address with numbers that is not registered — Passed.
+- Open the volunteer app.
+- Enter the email address "11111@2222.com" and press "Login."
+
+Expexted result 
+- You should see a notification saying "Email format is wrong, please check it" or another message about registration.
+------------------------------------------------------------------------------------------------
