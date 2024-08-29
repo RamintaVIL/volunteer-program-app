@@ -1,13 +1,21 @@
 Login functionality:
 
-Add email, which are registred:
+Add email, which are registred - Passed
 Step
-- Open volanteer app.
-- First of all, I registration new email 'a@a.lt'.
-- Refresh page
-- Write the same email 'a@a.lt' and press Login.
+- Open the volunteer app.
+- First, register a new email address, "a@a.lt."
+- Refresh the page.
+- Enter the same email address, "a@a.lt," and press "Login."
 
 Expexted result 
-- Succesfully login.
-- Open volanteer list.
+- No errors.
+- Successful login.
+- Access to the volunteer list.
+--------------------------------------------------------------------------------
+Add email, which are not registred - Passed
+- Open the volunteer app.
+- Enter the email address "aaaaa@bbb.lt" and press "Login."
+
+Expexted result 
+- You should see a notification saying "Email not found" or another message about registration.
 
